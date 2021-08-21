@@ -1,0 +1,14 @@
+.product-card-container {
+    width: 200px;
+}
+
+.product-card-container img {
+    width: 150px;
+    height: 150px;
+}
+
+.product-card-container:hover {
+    background-color: #f8f8f8;
+    transform: scale(1.05);
+    transition: 0.15s;
+}
