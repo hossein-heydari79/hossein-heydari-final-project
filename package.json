@@ -8,6 +8,7 @@
     "@testing-library/user-event": "^12.1.10",
     "aos": "^2.3.4",
     "axios": "^0.21.1",
+    "bcrypt": "^5.0.1",
     "install": "^0.13.0",
     "npm": "^7.21.0",
     "react": "^17.0.2",
