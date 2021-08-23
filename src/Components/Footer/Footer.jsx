@@ -11,8 +11,8 @@ import { MdEmail, MdPhone, MdMap, MdNearMe } from "react-icons/md"
 import { Button, Form } from 'react-bootstrap'
 const Footer = () => {
     return (
-        <div className="w-100 bg-light">
-            <div className="w-100" style={{ backgroundColor: "#f1f1f1" }}>
+        <div className="w-100" style={{ borderTop: "1px solid gray" }}>
+            {/* <div className="w-100" style={{ backgroundColor: "#f1f1f1" }}>
                 <div className="container">
                     <div className="row text-center">
                         <div className="col-4 p-4">
@@ -29,7 +29,7 @@ const Footer = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
             <div className="container w-100 h-75 my-5">
                 <div className="row w-100 h-100">
                     <div className="col-lg-4">
@@ -61,8 +61,8 @@ const Footer = () => {
                             <Button size="sm" className="mx-1" variant="outline-primary">عضویت</Button>
                         </div>
                     </div>
-                    <hr className="my-4" />
-                    <div className="d-flex flex-lg-row flex-column justify-content-between">
+                    {/* <hr className="my-4" /> */}
+                    {/* <div className="d-flex flex-lg-row flex-column justify-content-between">
                         <div className="w-lg-50 w-100">
                             ممد کامپیوتر یکی از جدیدترین سایتهای فروش قطعات است که از پارسال با فروش آت آشغال شروع به فعالیت کرده است.
                             امید است با همراهی شما عزیزان هر سال دسته بندیهای جدیدی به این فروشگاه اضافه شود تا بتوانیم با قدرت هرچه تمام تر جیب شمارا خالی کنیم.
@@ -71,12 +71,12 @@ const Footer = () => {
                             <div className="mx-2"><img src={Enamad} alt="" /></div>
                             <div className="mx-2"><img src={Union} alt="" /></div>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
             </div>
-            <div className="bg-dark text-light text-center">
+            {/* <div className="bg-dark text-light text-center">
                 <div>تمامی حقوق متعلق به شرکت گنده پرداز جنوبشرق می باشد.</div>
-            </div>
+            </div> */}
         </div>
     )
 }
