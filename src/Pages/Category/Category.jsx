@@ -206,9 +206,9 @@ export const Category = (props) => {
             </div> */}
             <div className="container my-3 pt-3">
                 <span>مرتب سازی به صورت:</span>
-                <Button onClick={() => handlePriceButton("fromCheap")} className="mx-2" variant="outline-secondary">ارزانترین</Button>
-                <Button onClick={() => handlePriceButton("fromExpensive")} className="mx-2" variant="outline-secondary">گرانترین</Button>
-                <Button onClick={() => handlePriceButton("fromNewest")} className="mx-2" variant="outline-secondary">جدیدترین</Button>
+                <Button onClick={() => handlePriceButton("fromCheap")} className="mx-2">ارزانترین</Button>
+                <Button onClick={() => handlePriceButton("fromExpensive")} className="mx-2">گرانترین</Button>
+                <Button onClick={() => handlePriceButton("fromNewest")} className="mx-2">جدیدترین</Button>
             </div>
             <div className="container d-flex my-5 justify-content-center">
                 {windowWidth > 500 &&
