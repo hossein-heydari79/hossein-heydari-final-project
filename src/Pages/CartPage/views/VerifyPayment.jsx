@@ -13,7 +13,7 @@ const VerifyPayment = (props) => {
                 style={{ boxShadow: "0 5px 8px -3px rgb(0 0 0 / 10%)", borderRadius: "8px" }}>
                 <MdCheckCircle
                     className="p-3"
-                    style={{ width: "150px", height: "150px", backgroundColor: "#f3fff9", color: "#3cc9a7", borderRadius: "50%" }}
+                    style={{ width: "100px", height: "100px", backgroundColor: "#f3fff9", color: "#3cc9a7", borderRadius: "50%" }}
                 />
                 <div>
                     <h3>پرداخت موفق</h3>
