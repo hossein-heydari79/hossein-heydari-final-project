@@ -55,46 +55,46 @@ export const Register = (props) => {
                     <div className="text-center">
                         <MdPersonAdd
                             className="p-3"
-                            style={{ width: "100px", height: "100px", backgroundColor: "#f3fff9", color: "#3cc9a7", borderRadius: "50%" }} />
+                            style={{ width: "100px", height: "100px", borderRadius: "50%" }} />
                     </div>
-                    <div className="text-center"><h5>حساب کاربری جدید بسازید</h5></div>
+                    <div className="text-center mt-4"><h5>حساب کاربری جدید بسازید</h5></div>
                     <div className="row">
-                        <div className="col-lg-6 col-12 mt-2">
+                        <div className="col-lg-6 col-12 mt-4">
                             <Form.Label>نام</Form.Label>
                             <Form.Control
                                 className="bg-light"
                                 style={{ borderRadius: "22px", border: "none" }}
                                 onChange={handleChange} name="firstName" type="text" placeholder="نام خود را وارد نمایید" />
                         </div>
-                        <div className="col-lg-6 col-12 mt-2">
+                        <div className="col-lg-6 col-12 mt-4">
                             <Form.Label>ایمیل</Form.Label>
                             <Form.Control
                                 className="bg-light"
                                 style={{ borderRadius: "22px", border: "none" }}
                                 onChange={handleChange} name="email" type="email" placeholder="آدرس ایمیل خود را وارد نمایید" />
                         </div>
-                        <div className="col-lg-6 col-12 mt-2">
+                        <div className="col-lg-6 col-12 mt-4">
                             <Form.Label>نام خانوادگی</Form.Label>
                             <Form.Control
                                 className="bg-light"
                                 style={{ borderRadius: "22px", border: "none" }}
                                 onChange={handleChange} name="lastName" type="text" placeholder="نام خانوادگی خود را وارد نمایید" />
                         </div>
-                        <div className="col-lg-6 col-12 mt-2">
+                        <div className="col-lg-6 col-12 mt-4">
                             <Form.Label>شماره موبایل</Form.Label>
                             <Form.Control
                                 className="bg-light"
                                 style={{ borderRadius: "22px", border: "none" }}
                                 onChange={handleChange} name="phoneNumber" type="email" placeholder="شماره موبایل خود را وارد نمایید" />
                         </div>
-                        <div className="col-lg-6 col-12 mt-2">
+                        <div className="col-lg-6 col-12 mt-4">
                             <Form.Label>کلمه عبور</Form.Label>
                             <Form.Control
                                 className="bg-light"
                                 style={{ borderRadius: "22px", border: "none" }}
                                 onChange={handleChange} name="password" type="password" placeholder="کلمه عبور خود را وارد نمایید" />
                         </div>
-                        <div className="col-lg-6 col-12 mt-2">
+                        <div className="col-lg-6 col-12 mt-4">
                             <Form.Label>تایید کلمه عبور</Form.Label>
                             <Form.Control
                                 className="bg-light"
@@ -105,8 +105,8 @@ export const Register = (props) => {
                     <small>{message}</small>
                     <div className="w-100 px-5">
                         <Button
-                            style={{ backgroundColor: "#3bc9a7" }}
-                            className="w-100 mt-3"
+
+                            className="w-100 mt-3 bg-primary"
                             onClick={handleRegister} variant="primary" type="submit">
                             ایجاد حساب کاربری
                         </Button>

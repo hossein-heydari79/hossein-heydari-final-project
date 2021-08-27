@@ -257,6 +257,13 @@ const MyNavbar = () => {
                                             >ورود به حساب
                                             </div>
                                         }
+                                        {
+                                            !userInfo.isLogin &&
+                                            <div
+                                                onClick={() => history.push("/register")}
+                                            >ثبت نام
+                                            </div>
+                                        }
                                     </div>
                                 }
                             </div>
