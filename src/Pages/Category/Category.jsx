@@ -305,7 +305,7 @@ export const Category = (props) => {
                         <button onClick={fitlerButtonClick} className="btn w-100 text-white bg-primary">اعمال فیلتر</button>
                     </div>
                 }
-                <div className="d-flex justify-content-center flex-wrap w-75 mx-lg-auto mx-3 p-3 bg-white" style={{ boxShadow: "rgb(0 0 0 / 10%) -1px 7px 12px 7px", borderRadius: "8px" }}>
+                <div className="d-flex justify-content-center align-items-center flex-wrap w-75 mx-lg-auto mx-3 p-3 bg-white" style={{ boxShadow: "rgb(0 0 0 / 10%) -1px 7px 12px 7px", borderRadius: "8px" }}>
                     {
                         items.map(((item, index) => {
                             // let end = pagination + Math.ceil(items.length / 4)
