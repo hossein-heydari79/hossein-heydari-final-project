@@ -279,34 +279,34 @@ const MyNavbar = () => {
                         <div className="d-flex flex-column text-center">
                             <MdHome
                                 onClick={() => history.push("/homepage")}
-                                style={{ width: "40px", height: "40px", color: "#019ca7" }}
+                                style={{ width: "40px", height: "40px", color: "black" }}
                             />
                             <span style={{ fontSize: "smaller" }}>خانه</span>
                         </div>
                         <div className="d-flex flex-column text-center">
                             <MdList
                                 onClick={handleShow}
-                                style={{ width: "40px", height: "40px", color: "#019ca7" }}
+                                style={{ width: "40px", height: "40px", color: "black" }}
                             />
                             <span style={{ fontSize: "smaller" }}>دسته بندی</span>
                         </div>
                         <div className="d-flex flex-column text-center">
                             <MdShoppingCart
                                 onClick={() => history.push("/cart")}
-                                style={{ width: "40px", height: "40px", color: "#019ca7" }}
+                                style={{ width: "40px", height: "40px", color: "black" }}
                             />
                             <span style={{ fontSize: "smaller" }}>سبد خرید</span>
                         </div>
                         <div className="d-flex flex-column text-center">
                             <MdSearch
                                 onClick={handleShowSearch}
-                                style={{ width: "40px", height: "40px", color: "#019ca7" }}
+                                style={{ width: "40px", height: "40px", color: "black" }}
                             />
                             <span style={{ fontSize: "smaller" }}>جستجو</span>
                         </div>
                         <div className="d-flex flex-column text-center">
                             <MdAccountCircle
-                                style={{ width: "40px", height: "40px", color: "#019ca7" }}
+                                style={{ width: "40px", height: "40px", color: "black" }}
                             />
                             <span style={{ fontSize: "smaller" }}>حساب</span>
                         </div>

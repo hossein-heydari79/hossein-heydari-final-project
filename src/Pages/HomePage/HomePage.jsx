@@ -45,7 +45,7 @@ export const HomePage = (props) => {
                     <div className="col-lg-6 my-2 col-12"><img className="w-100" style={{ borderRadius: "8px" }} src={promoPic6} alt="" /></div>
                 </div>
             </div>
-            <ProductSlider title={"لپ تاپ"} background={"bg-primary"} color={"#019ca7"} url="/laptop" textColor="text-white" />
+            <ProductSlider title={"لپ تاپ"} background={"bg-primary"} color={"black"} url="/laptop" textColor="text-white" />
             {/* <CategoryCard /> */}
         </div>
     )
