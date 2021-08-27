@@ -59,7 +59,7 @@ const ProductDetails = (props) => {
     const handleAddProduct = () => {
         dispatch({ type: "addProduct", payload: product })
         toast.success('کالا به سبد خرید اضافه شد', {
-            position: "bottom-right",
+            position: "bottom-left",
             autoClose: 2000,
             hideProgressBar: false,
             closeOnClick: true,
@@ -199,7 +199,7 @@ const ProductDetails = (props) => {
                 </div>
             </div>
             <ToastContainer
-                position="bottom-center"
+                position="bottom-left"
                 autoClose={5000}
                 hideProgressBar={false}
                 newestOnTop={false}

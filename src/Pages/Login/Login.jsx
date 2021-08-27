@@ -36,7 +36,7 @@ export const Login = (props) => {
                     }
                 })
                 toast.success('با موفقیت وارد شدید', {
-                    position: "bottom-center",
+                    position: "bottom-left",
                     autoClose: 2000,
                     hideProgressBar: false,
                     closeOnClick: true,
@@ -48,7 +48,7 @@ export const Login = (props) => {
             })
             .catch(err => {
                 toast.error('کاربر وجود ندارد', {
-                    position: "bottom-center",
+                    position: "bottom-left",
                     autoClose: 2000,
                     hideProgressBar: false,
                     closeOnClick: true,
@@ -63,12 +63,12 @@ export const Login = (props) => {
         <div className="w-100 bg-light h-100" style={{ marginTop: "6rem" }}>
             <div className="container w-100 h-75 d-flex justify-content-center align-items-center">
                 <Form className="bg-white p-5 rounded"
-                    style={{ boxShadow: "0 5px 8px -3px rgb(0 0 0 / 10%)", borderRadius: "8px" }}
+                    style={{ boxShadow: "0 5px 8px -3px rgb(0 0 0 / 10%)", borderRadius: "8px", width: "40%" }}
                 >
                     <div className="text-center">
                         <MdLockOpen
                             className="p-3"
-                            style={{ width: "100px", height: "100px", backgroundColor: "#fff9f9", color: "#e05c5c", borderRadius: "50%" }} />
+                            style={{ width: "80px", height: "80px", backgroundColor: "#fff9f9", borderRadius: "50%", margin: "1rem" }} />
                     </div>
                     <div className="text-center"><h1>Login</h1></div>
                     <Form.Group className="mb-3" controlId="formBasicEmail">
@@ -84,15 +84,15 @@ export const Login = (props) => {
                             onChange={handleChange} name="password" type="password" placeholder="کلمه عبور" />
                     </Form.Group>
                     <Button
-                        style={{ backgroundColor: "#3bc9a7" }}
-                        className="w-100 mt-3"
+
+                        className="w-100 mt-3 bg-primary"
                         onClick={handleLogin} variant="primary" type="submit">
                         ورود به حساب
                     </Button>
                 </Form>
             </div>
             <ToastContainer
-                position="bottom-center"
+                position="bottom-left"
                 autoClose={5000}
                 hideProgressBar={false}
                 newestOnTop={false}
