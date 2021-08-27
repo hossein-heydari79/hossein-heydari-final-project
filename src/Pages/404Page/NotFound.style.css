@@ -9,9 +9,12 @@
 }
 
 .four_zero_four_bg {
-    background-image: url("../../Assets/404gif.gif");
-    height: 400px;
+    /* background-image: url("../../Assets/404gif.gif"); */
+    height: 200px;
     background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .four_zero_four_bg h1 {
