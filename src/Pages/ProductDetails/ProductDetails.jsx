@@ -177,7 +177,7 @@ const ProductDetails = (props) => {
                     <div>
                         <ProductSlider url={`/${category}`} title="محصولات مرتبط" textColor="text-black" />
                     </div>
-                    <div id="addComments" className="my-2 p-2 w-100 card-container">
+                    {/* <div id="addComments" className="my-2 p-2 w-100 card-container">
                         <h3>افزودن دیدگاه</h3>
 
                         <hr />
@@ -195,7 +195,7 @@ const ProductDetails = (props) => {
                             </Form.Group>
                             <button className="btn btn-primary">ثبت نظر</button>
                         </Form>
-                    </div>
+                    </div> */}
                 </div>
             </div>
             <ToastContainer
