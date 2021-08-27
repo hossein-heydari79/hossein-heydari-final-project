@@ -89,18 +89,18 @@ export const Category = (props) => {
             {windowWidth < 500 &&
                 <div
                     onClick={() => setShowFilter(!showFilter)}
-                    className="p-3"
-                    style={{ backgroundColor: "#019CA7", position: "fixed", bottom: "14%", right: "5%", borderRadius: "50%" }}>
-                    <FiFilter style={{ width: "35px", height: "35px" }} className="" />
+                    className="p-3 bg-primary text-white"
+                    style={{ position: "fixed", bottom: "14%", right: "5%", borderRadius: "50%" }}>
+                    <FiFilter style={{ width: "25px", height: "25px" }} className="" />
                 </div>
             }
             {showFilter &&
                 <div className="w-100 h-100 bg-light" style={{ position: "fixed", bottom: "0", overflowY: "scroll", zIndex: 20 }}>
                     <div className="d-flex justify-content-between mt-5 pt-5">
-                        <h1>فیلترها</h1>
+                        <h1 style={{ padding: "1rem" }}>فیلترها</h1>
                         <MdClose
                             onClick={() => setShowFilter(!showFilter)}
-                            style={{ width: "40px", height: "40px" }} />
+                            style={{ width: "30px", height: "30px", margin: "1rem" }} />
                     </div>
                     <div className="px-5" >
                         <div className="p-2 mb-3 bg-white" style={{ boxShadow: "rgb(0 0 0 / 10%) -1px 7px 12px 7px", borderRadius: "8px" }}>
@@ -195,7 +195,7 @@ export const Category = (props) => {
                         <div className="w-100" style={{ minHeight: "120px" }}>
                             <button
                                 onClick={handleFilterInMobile}
-                                className="btn w-100 text-white" style={{ backgroundColor: "#3bc9a7" }}>اعمال فیلتر</button>
+                                className="btn w-100 text-white bg-primary">اعمال فیلتر</button>
                         </div>
                     </div>
                 </div>
@@ -204,7 +204,7 @@ export const Category = (props) => {
                 <span>{name}</span>
                 <span style={{ cursor: "pointer" }} onClick={() => history.push("/homepage")}> &lt; home</span>
             </div> */}
-            <div className="container my-3">
+            <div className="container my-3 pt-3">
                 <span>مرتب سازی به صورت:</span>
                 <Button onClick={() => handlePriceButton("fromCheap")} className="mx-2" variant="outline-secondary">ارزانترین</Button>
                 <Button onClick={() => handlePriceButton("fromExpensive")} className="mx-2" variant="outline-secondary">گرانترین</Button>
@@ -307,7 +307,7 @@ export const Category = (props) => {
                 }
                 <div className="d-flex justify-content-center align-items-center flex-wrap w-75 mx-lg-auto mx-3 p-3 bg-white" style={{ boxShadow: "rgb(0 0 0 / 10%) -1px 7px 12px 7px", borderRadius: "8px" }}>
                     {
-                        items.map(((item, index) => {
+                        items.length == 0 ? <h2>!! Not Found</h2> : items.map(((item, index) => {
                             // let end = pagination + Math.ceil(items.length / 4)
                             // if (index >= pagination && index <= end)
                             return (
