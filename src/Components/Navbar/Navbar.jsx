@@ -406,48 +406,6 @@ const MyNavbar = () => {
                     onMouseLeave={() => setCategoryShow(false)}
                 >
                         <Nav.Item className="">
-                            {/* <Nav.Link className="" eventKey="link-1"
-                            >دسته بندی
-                                {
-                                    categoryShow && <div className="bg-light w-50"
-                                        style={{ position: "absolute", border: "1px solid #aecacc" }}
-                                    >
-                                        <div className="container">
-                                            <div className="row">
-                                                <div className="col-4" style={{ backgroundColor: "#edfbfc" }}>
-                                                    <Link style={{ textDecoration: "none" }} to="/categorymobile">
-                                                        <div className="my-2 p-1"
-                                                            onMouseEnter={() => setBrand(mbileBrands)}
-                                                        >گوشی</div>
-                                                    </Link>
-                                                    <Link style={{ textDecoration: "none" }} to="/categorytablet">
-                                                        <div className="my-2 p-1"
-                                                            onMouseEnter={() => setBrand(tabletBrands)}
-                                                        >تبلت</div>
-                                                    </Link>
-                                                    <Link style={{ textDecoration: "none" }} to="/categorylaptop">
-                                                        <div className="my-2 p-1"
-                                                            onMouseEnter={() => setBrand(laptopBrands)}
-                                                        >لپ تاپ</div>
-                                                    </Link>
-                                                </div>
-                                                <div className="col-8">
-                                                    {
-                                                        brand.map((item, index) => {
-                                                            if (index > 0)
-                                                                return (
-                                                                    <div className="p-1" onClick={() => history.push(`/${brand[0]}?brand=${item}`)} key={Math.random() * 1000}>
-                                                                        {item}
-                                                                    </div>
-                                                                )
-                                                        })
-                                                    }
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                }
-                            </Nav.Link> */}
                         </Nav.Item></div>
                     <Nav.Item>
                         <Nav.Link onClick={() => history.push("/categorymobile")}>گوشی</Nav.Link>

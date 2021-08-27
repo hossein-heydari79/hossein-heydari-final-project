@@ -328,20 +328,6 @@ export const Category = (props) => {
                     }
                 </div>
             </div>
-            {/* <Pagination className="d-flex justify-content-center flex-row-reverse">
-                <Pagination.Next />
-                <Pagination.Last />
-                {
-                    items.map((item, index) => {
-                        if (index % 4 === 0)
-                            return (
-                                <Pagination.Item key={Math.random()} id={`${index / 4}`} onClick={handlePaginationClick}>{index / 4 + 1}</Pagination.Item>
-                            )
-                    })
-                }
-                <Pagination.First />
-                <Pagination.Prev />
-            </Pagination> */}
         </div>
     )
 }

@@ -70,11 +70,6 @@ const ProductDetails = (props) => {
     }
     return (
         <div className="w-100" style={{ marginTop: "7rem", backgroundColor: "#fbfbfb" }}>
-            {/* <div className="container p-3">
-                <span>{product?.model}</span>
-                <span style={{ cursor: "pointer" }} onClick={() => history.push(`/category${product?.category}`)}> &lt; {product?.category}</span>
-                <span style={{ cursor: "pointer" }} onClick={() => history.push("/homepage")}> &lt; home</span>
-            </div> */}
             <div className="container w-100">
                 <div className="w-100 d-flex bg-white p-3 card-container">
                     <div className="row w-100">
@@ -147,55 +142,9 @@ const ProductDetails = (props) => {
                             </Table>
                         </div>
                     </div>
-
-                    {/* <div id="comments" className="my-5 p-2 card-container">
-                        <h3>دیدگاه کاربران</h3>
-                        <hr />
-                        <div className="bg-light">
-                            <h6>ممد زامبی</h6>
-                            <p>
-                                آقا مفتش گرونه نخرید که رفته تو پاچتون.از ما گفتن بود از شما نشنیدن
-                            </p>
-                        </div>
-                        <div className="bg-light">
-                            <h6>علی راستگو</h6>
-                            <p>
-                                بهترین گوشی دنیاس رو دستش نیومده و دیگه هم نمیاد تامام
-                            </p>
-                        </div>
-                        {
-                            product?.comments && product?.comments.map((comment, index) => (
-                                <div className="bg-light">
-                                    <h6>{comment.name}</h6>
-                                    <p>
-                                        {comment.comment}
-                                    </p>
-                                </div>
-                            ))
-                        }
-                    </div> */}
                     <div>
                         <ProductSlider url={`/${category}`} title="محصولات مرتبط" textColor="text-black" />
                     </div>
-                    {/* <div id="addComments" className="my-2 p-2 w-100 card-container">
-                        <h3>افزودن دیدگاه</h3>
-
-                        <hr />
-                        <Form
-                            onSubmit={handleCommentSubmit}
-                            onChange={handleComment}
-                            className={`${windowWidth < 500 ? "w-100" : "w-50"}`}>
-                            <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-                                <Form.Label>نام</Form.Label>
-                                <Form.Control name="name" type="text" placeholder="نام خود را وارد کنید" />
-                                <Form.Label>آدرس ایمیل</Form.Label>
-                                <Form.Control name="email" type="email" placeholder="ایمیل خود را وارد کنید" />
-                                <Form.Label>دیدگاه شما</Form.Label>
-                                <Form.Control name="comment" as="textarea" rows={3} />
-                            </Form.Group>
-                            <button className="btn btn-primary">ثبت نظر</button>
-                        </Form>
-                    </div> */}
                 </div>
             </div>
             <ToastContainer

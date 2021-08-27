@@ -111,17 +111,6 @@ const VerifyAdress = (props) => {
                                 />
                             </div>
                         </div>
-                        {/* <div className="col-lg-3 col-12 h-100 bg-white mt-lg-0 mt-3 p-4"
-                            style={{ boxShadow: "0 5px 8px -3px rgb(0 0 0 / 10%)", borderRadius: "8px" }}
-                        >
-                            <h4 className="mb-3">روش ارسال</h4>
-                            <Form onChange={handlePostMethod}>
-                                <Form.Check value="pishtaz" name="postOption" type="radio" id="default-radio" label="پست پیشتاز" />
-                                <Form.Check value="tipax" name="postOption" type="radio" id="default-radio" label="تیپاکس" />
-                                <Form.Check value="barbari" name="postOption" type="radio" id="default-radio" label="باربری" />
-                                <Form.Check value="bus" name="postOption" type="radio" id="default-radio" label="اتوبوس" />
-                            </Form>
-                        </div> */}
                     </div>
                 </div>
                 {
