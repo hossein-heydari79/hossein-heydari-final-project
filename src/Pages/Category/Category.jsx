@@ -202,7 +202,7 @@ export const Category = (props) => {
             }
             {/* <div className="container p-3 p-lg-0">
                 <span>{name}</span>
-                <span style={{ cursor: "pointer" }} onClick={() => history.push("/homepage")}> &lt; home</span>
+                <span style={{ cursor: "pointer" }} onClick={() => history.push("/")}> &lt; home</span>
             </div> */}
             <div className="container my-3 pt-3">
                 <span>مرتب سازی به صورت:</span>

@@ -19,7 +19,7 @@ const NotFound = () => {
                                     </h3>
                                     <p>متاسفانه صفحه‌ای که به دنبال آن بودید حذف یا منتقل شده است.</p>
                                     <Button
-                                        onClick={() => history.push("/homepage")}
+                                        onClick={() => history.push("/")}
                                         variant="success">رفتن به صفحه اصلی</Button>
                                 </div>
                             </div>

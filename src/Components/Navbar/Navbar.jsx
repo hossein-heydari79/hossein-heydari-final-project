@@ -80,7 +80,7 @@ const MyNavbar = () => {
     return (
         <Navbar fixed="top" bg="white" expand="lg" className="w-100 d-flex flex-column" style={{ borderBottom: "1px solid gray" }}>
             <div className="w-100 d-flex justify-content-between container">
-                <Navbar.Brand className="" onClick={() => history.push("/homepage")} href="#">دیجی کالا</Navbar.Brand>
+                <Navbar.Brand className="" onClick={() => history.push("/")} href="#">دیجی کالا</Navbar.Brand>
                 {windowWidth > 500 &&
                     <Form className="d-flex flex-column align-items-end mx-auto" style={{ width: "50%" }}>
                         <div className="w-75" style={{ position: "relative" }}>
@@ -278,7 +278,7 @@ const MyNavbar = () => {
                         style={{ position: "fixed", left: "0", bottom: "0" }}>
                         <div className="d-flex flex-column text-center">
                             <MdHome
-                                onClick={() => history.push("/homepage")}
+                                onClick={() => history.push("/")}
                                 style={{ width: "40px", height: "40px", color: "black" }}
                             />
                             <span style={{ fontSize: "smaller" }}>خانه</span>

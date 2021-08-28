@@ -44,7 +44,7 @@ export const Login = (props) => {
                     draggable: true,
                     progress: undefined,
                 });
-                setTimeout(() => history.push("/homepage"), 2000)
+                setTimeout(() => history.push("/"), 2000)
             })
             .catch(err => {
                 toast.error('کاربر وجود ندارد', {
