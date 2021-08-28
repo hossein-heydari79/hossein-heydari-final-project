@@ -5,7 +5,6 @@ const Category = React.lazy(() => import("../Pages/Category/Category"))
 const ProductDetails = React.lazy(() => import("../Pages/ProductDetails/ProductDetails"))
 const CartPage = React.lazy(() => import("../Pages/CartPage/CartPage"))
 const Register = React.lazy(() => import("../Pages/Register/Register"))
-const NotFound = React.lazy(() => import("../Pages/404Page/NotFound"))
 const routes = [
     { path: '/', exact: true, Component: HomePage, loginRequired: false },
     { path: '/login', exact: true, Component: Login, loginRequired: false },
