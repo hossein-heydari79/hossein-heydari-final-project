@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react'
 import { RouteComponentProps } from 'react-router'
 import Carousel from '../../Components/Carousel/Carousel'
 import ProductSlider from '../../Components/ProductSlider/ProductSlider'
-import CategoryCard from '../../Components/CategoryCard/CategoryCard'
 import promoPic1 from '../../Assets/PromotionPic1.jpg'
 import promoPic2 from '../../Assets/PromotionPic2.jpg'
 import promoPic3 from '../../Assets/PromotionPic3.jpg'
@@ -46,7 +45,6 @@ export const HomePage = (props) => {
                 </div>
             </div>
             <ProductSlider title={"لپ تاپ"} background={"bg-primary"} color={"black"} url="/laptop" textColor="text-white" />
-            {/* <CategoryCard /> */}
         </div>
     )
 }
