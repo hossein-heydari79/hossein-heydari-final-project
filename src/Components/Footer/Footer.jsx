@@ -11,7 +11,7 @@ import { MdEmail, MdPhone, MdMap, MdNearMe } from "react-icons/md"
 import { Button, Form } from 'react-bootstrap'
 const Footer = () => {
     return (
-        <div className="w-100" style={{ borderTop: "1px solid gray" }}>
+        <div className="w-100" style={{ borderTop: "1px solid gray", backgroundColor: "#F8F9FA" }}>
             <div className="container w-100 h-75 my-5">
                 <div className="row w-100 h-100">
                     <div className="col-lg-4">

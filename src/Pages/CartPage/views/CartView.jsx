@@ -36,13 +36,13 @@ const CartView = (props) => {
         history.push("/cart/verifyaddress")
     }
     return (
-        <div className="container w-100 d-flex">
+        <div className="container w-100 d-flex" style={{ backgroundColor: "#F8F9FA" }}>
             <div className={`${windowWidth < 500 ? "w-100" : "w-75"}`}>
                 {
                     cartItems.map((item) => {
                         return (
-                            <div key={Math.random() * 3213} className="row bg-white p-2 m-4 rounded"
-                                style={{ boxShadow: "0 5px 8px -3px rgb(0 0 0 / 10%)", borderRadius: "8px" }}
+                            <div key={Math.random() * 3213} className="row p-2 m-4 rounded"
+                                style={{ borderRadius: "8px", border: "1px solid lightgray" }}
                             >
                                 <div className={`${windowWidth < 500 ? "col12" : "col-4"} 
                                     text-center`}>
@@ -115,8 +115,8 @@ const CartView = (props) => {
             </div>
             {
                 windowWidth > 500 &&
-                <div className="w-25 my-4 mx-1 bg-white"
-                    style={{ boxShadow: "0 5px 8px -3px rgb(0 0 0 / 10%)", borderRadius: "8px", height: "200px" }}>
+                <div className="w-25 my-4 mx-1"
+                    style={{ borderRadius: "8px", height: "200px", backgroundColor: "#F8F9FA", border: "1px solid lightgray" }}>
                     <div className="rounded p-3">
                         <div>
                             <h5>خلاصه فاکتور</h5>

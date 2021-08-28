@@ -51,16 +51,16 @@ const VerifyAdress = (props) => {
     }
     return (
         <div className="container w-100 d-flex">
-            <div className={`bg-light mt-4 p-3 ${windowWidth < 500 ? "w-100" : "w-75"}`} >{console.log(userInfo)}
+            <div className={`bg-light mt-4 pb-4 ${windowWidth < 500 ? "w-100" : "w-75"}`} >{console.log(userInfo)}
                 <div className="container w-100">
                     <div className="row d-flex justify-content-lg-between justify-content-center">
-                        <div className="col-lg-9 col-12 row bg-white p-3"
-                            style={{ boxShadow: "0 5px 8px -3px rgb(0 0 0 / 10%)", borderRadius: "8px" }}
+                        <div className="col-lg-12 col-12 row p-3"
+                            style={{ border: "1px solid lightgray", borderRadius: "8px", backgroundColor: "#F8F9FA" }}
                         >
                             <h4 className="mb-3">نشانی</h4>
                             <div className="col-lg-6 col-12">
                                 <label className="my-2" htmlFor="">کدپستی</label>
-                                <Form.Control className="bg-light" style={{ borderRadius: "22px", border: "none" }}
+                                <Form.Control className="bg-light" style={{ borderRadius: "22px", border: "none", border: "1px solid lightgray" }}
                                     type="text" placeholder="کدپستی خود را وارد کنید"
                                     name="postalCode"
                                     onChange={userInput} />
@@ -68,7 +68,7 @@ const VerifyAdress = (props) => {
                             <div className="col-lg-6 col-12">
                                 <label className="my-2" htmlFor="">نام تحویل گیرنده</label>
                                 <Form.Control className="bg-light"
-                                    style={{ borderRadius: "22px", border: "none" }}
+                                    style={{ borderRadius: "22px", border: "none", border: "1px solid lightgray" }}
                                     type="text" placeholder="نام گیرنده را وارد کنید"
                                     name="fullName"
                                     onChange={userInput} />
@@ -76,7 +76,7 @@ const VerifyAdress = (props) => {
                             <div className="col-lg-6 col-12">
                                 <label className="my-2" htmlFor="">استان</label>
                                 <Form.Select className="bg-light"
-                                    style={{ borderRadius: "22px", border: "none", fontSize: "smaller" }}
+                                    style={{ borderRadius: "22px", border: "none", fontSize: "smaller", border: "1px solid lightgray" }}
                                     onChange={handleProvienceChange} aria-label="Default select example">
                                     <option>یک مورد را انتخاب نمایید</option>
                                     {
@@ -89,7 +89,7 @@ const VerifyAdress = (props) => {
                             <div className="col-lg-6 col-12">
                                 <label className="my-2" htmlFor="">شهر</label>
                                 <Form.Select className="bg-light"
-                                    style={{ borderRadius: "22px", border: "none", fontSize: "smaller" }}
+                                    style={{ borderRadius: "22px", border: "none", fontSize: "smaller", border: "1px solid lightgray" }}
                                     aria-label="Default select example"
                                     onChange={handleCityChange}
                                 >
@@ -104,7 +104,7 @@ const VerifyAdress = (props) => {
                             <div className="col-12">
                                 <label className="my-2" htmlFor="">آدرس دقیق</label>
                                 <Form.Control className="bg-light"
-                                    style={{ borderRadius: "22px", border: "none" }}
+                                    style={{ borderRadius: "22px", border: "1px solid lightgray" }}
                                     as="textarea" placeholder="آدرس دقیق محل تحویل کالا را وارد نمایید"
                                     name="address"
                                     onChange={userInput}
@@ -128,8 +128,8 @@ const VerifyAdress = (props) => {
             </div>
             {
                 windowWidth > 500 &&
-                <div className="w-25 my-4 mx-1 bg-white"
-                    style={{ boxShadow: "0 5px 8px -3px rgb(0 0 0 / 10%)", borderRadius: "8px", height: "200px" }}>
+                <div className="w-25 my-4 mx-1"
+                    style={{ border: "1px solid lightgray", borderRadius: "8px", height: "200px", backgroundColor: "#F8F9FA" }}>
                     <div className="rounded p-3">
                         <div>
                             <h5>خلاصه فاکتور</h5>

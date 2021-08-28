@@ -33,11 +33,11 @@ const PaymentMethod = (props) => {
     }
     return (
         <div className="container w-100 d-flex">{console.log(payment)}
-            <div className={`bg-light mt-4 p-3 ${windowWidth < 500 ? "w-100" : "w-75"}`}>
+            <div className={`mt-4 p-3 ${windowWidth < 500 ? "w-100" : "w-75"}`} style={{ backgroundColor: "#F8F9FA", border: "1px solid lightgray", borderRadius: "8px" }}>
                 <h4>روشهای پرداخت</h4>
                 <div className="row d-flex justify-content-lg-between justify-content-center">
-                    <div className="col-lg-5 bg-white p-4 mt-3"
-                        style={{ boxShadow: "0 5px 8px -3px rgb(0 0 0 / 10%)", borderRadius: "8px" }}
+                    <div className="col-lg-5 p-4 mt-3"
+                        style={{ border: "1px solid lightgray", borderRadius: "8px", backgroundColor: "#F8F9FA" }}
                     >
                         <h5>انتخاب نوع پرداخت</h5>
                         <Form onChange={handleChange}>
@@ -45,8 +45,8 @@ const PaymentMethod = (props) => {
                             <Form.Check name="paymentMethod" value="cash" type="radio" id="default-radio" label="نقدی" />
                         </Form>
                     </div>
-                    <div className="col-lg-6 bg-white p-4 mt-3"
-                        style={{ boxShadow: "0 5px 8px -3px rgb(0 0 0 / 10%)", borderRadius: "8px" }}
+                    <div className="col-lg-6 p-4 mt-3"
+                        style={{ border: "1px solid lightgray", borderRadius: "8px", backgroundColor: "#F8F9FA" }}
                     >
                         <h5>انتخاب درگاه پرداخت</h5>
                         <Form onChange={handleChange}>
@@ -56,14 +56,14 @@ const PaymentMethod = (props) => {
                     </div>
                 </div>
                 <div className="row">
-                    <div className="mt-3 bg-white w-100 p-4"
-                        style={{ boxShadow: "0 5px 8px -3px rgb(0 0 0 / 10%)", borderRadius: "8px" }}
+                    <div className="mt-3 w-100 p-4"
+                        style={{ border: "1px solid lightgray", borderRadius: "8px", backgroundColor: "#F8F9FA" }}
                     >
                         <label htmlFor="">کد تخفیف</label>
                         <div className="d-flex">
                             <Form.Control
                                 className="bg-light"
-                                style={{ borderRadius: "22px", border: "none" }}
+                                style={{ borderRadius: "22px", border: "1px solid lightgray" }}
                                 type="text" placeholder="در صورت داشتن کد تخفیف آن را وارد کنید" />
                             <Button variant="outline-success" className="mx-4">اعمال</Button>
                         </div>
@@ -84,8 +84,8 @@ const PaymentMethod = (props) => {
             </div>
             {
                 windowWidth > 500 &&
-                <div className="w-25 my-4 mx-1 bg-white"
-                    style={{ boxShadow: "0 5px 8px -3px rgb(0 0 0 / 10%)", borderRadius: "8px", height: "200px" }}>
+                <div className="w-25 my-4 mx-1 "
+                    style={{ border: "1px solid gray", borderRadius: "8px", height: "200px", border: "1px solid lightgray" }}>
                     <div className="rounded p-3">
                         <div>
                             <h5>خلاصه فاکتور</h5>

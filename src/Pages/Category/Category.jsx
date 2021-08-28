@@ -103,7 +103,7 @@ export const Category = (props) => {
                             style={{ width: "30px", height: "30px", margin: "1rem" }} />
                     </div>
                     <div className="px-5" >
-                        <div className="p-2 mb-3 bg-white" style={{ boxShadow: "rgb(0 0 0 / 10%) -1px 7px 12px 7px", borderRadius: "8px" }}>
+                        <div className="p-2 mb-3 bg-white" style={{ border: "1px solid gray", borderRadius: "8px", backgroundColor: "#F8F9FA" }}>
                             <div><strong>برند</strong></div>
                             <div>
                                 {name === "mobile" &&
@@ -128,7 +128,7 @@ export const Category = (props) => {
                                 }
                             </div>
                         </div>
-                        <div className="p-2 mb-3 bg-white" style={{ boxShadow: "rgb(0 0 0 / 10%) -1px 7px 12px 7px", borderRadius: "8px" }}>
+                        <div className="p-2 mb-3" style={{ border: "1px solid gray", borderRadius: "8px", backgroundColor: "#F8F9FA" }}>
                             <div><strong>حافظه داخلی</strong></div>
                             <div>
                                 {(name === "mobile" || name === "tablet") &&
@@ -150,7 +150,7 @@ export const Category = (props) => {
                                 }
                             </div>
                         </div>
-                        <div className="p-2 mb-3 bg-white" style={{ boxShadow: "rgb(0 0 0 / 10%) -1px 7px 12px 7px", borderRadius: "8px" }}>
+                        <div className="p-2 mb-3" style={{ border: "1px solid gray", borderRadius: "8px", backgroundColor: "#F8F9FA" }}>
                             <div><strong>اندازه صفحه نمایش</strong></div>
                             <div>
                                 {name === "mobile" &&
@@ -180,7 +180,7 @@ export const Category = (props) => {
                             </div>
                         </div>
                         {(name === "mobile" || name === "tablet") &&
-                            <div className="p-2 mb-3 bg-white" style={{ boxShadow: "rgb(0 0 0 / 10%) -1px 7px 12px 7px", borderRadius: "8px" }}>
+                            <div className="p-2 mb-3" style={{ border: "1px solid gray", borderRadius: "8px", backgroundColor: "#F8F9FA" }}>
                                 <div><strong>شبکه ارتباطی</strong></div>
                                 <div>
                                     <ul>
@@ -213,7 +213,7 @@ export const Category = (props) => {
             <div className="container d-flex my-5 justify-content-center">
                 {windowWidth > 500 &&
                     <div className="" >
-                        <div className="p-2 mb-3 bg-white" style={{ boxShadow: "rgb(0 0 0 / 10%) -1px 7px 12px 7px", borderRadius: "8px" }}>
+                        <div className="p-2 mb-3" style={{ border: "1px solid gray", borderRadius: "8px", backgroundColor: "#F8F9FA" }}>
                             <div><strong>برند</strong></div>
                             <div>
                                 {name === "mobile" &&
@@ -238,7 +238,7 @@ export const Category = (props) => {
                                 }
                             </div>
                         </div>
-                        <div className="p-2 mb-3 bg-white" style={{ boxShadow: "rgb(0 0 0 / 10%) -1px 7px 12px 7px", borderRadius: "8px" }}>
+                        <div className="p-2 mb-3" style={{ border: "1px solid gray", borderRadius: "8px", backgroundColor: "#F8F9FA" }}>
                             <div><strong>حافظه داخلی</strong></div>
                             <div>
                                 {(name === "mobile" || name === "tablet") &&
@@ -260,7 +260,7 @@ export const Category = (props) => {
                                 }
                             </div>
                         </div>
-                        <div className="p-2 mb-3 bg-white" style={{ boxShadow: "rgb(0 0 0 / 10%) -1px 7px 12px 7px", borderRadius: "8px" }}>
+                        <div className="p-2 mb-3" style={{ border: "1px solid gray", borderRadius: "8px", backgroundColor: "#F8F9FA" }}>
                             <div><strong>اندازه صفحه نمایش</strong></div>
                             <div>
                                 {name === "mobile" &&
@@ -290,7 +290,7 @@ export const Category = (props) => {
                             </div>
                         </div>
                         {(name === "mobile" || name === "tablet") &&
-                            <div className="p-2 mb-3 bg-white" style={{ boxShadow: "rgb(0 0 0 / 10%) -1px 7px 12px 7px", borderRadius: "8px" }}>
+                            <div className="p-2 mb-3" style={{ border: "1px solid gray", borderRadius: "8px", backgroundColor: "#F8F9FA" }}>
                                 <div><strong>شبکه ارتباطی</strong></div>
                                 <div>
                                     <ul>
@@ -305,7 +305,7 @@ export const Category = (props) => {
                         <button onClick={fitlerButtonClick} className="btn w-100 text-white bg-primary">اعمال فیلتر</button>
                     </div>
                 }
-                <div className="d-flex justify-content-center align-items-center flex-wrap w-75 mx-lg-auto mx-3 p-3 bg-white" style={{ boxShadow: "rgb(0 0 0 / 10%) -1px 7px 12px 7px", borderRadius: "8px" }}>
+                <div className="d-flex justify-content-center align-items-center flex-wrap w-75 mx-lg-auto mx-3 p-3" style={{ borderRadius: "8px", backgroundColor: "#F8F9FA", border: "1px solid gray" }}>
                     {
                         items.length == 0 ? <h2>!! Not Found</h2> : items.map(((item, index) => {
                             // let end = pagination + Math.ceil(items.length / 4)

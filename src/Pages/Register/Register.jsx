@@ -46,12 +46,12 @@ export const Register = (props) => {
         })
     }, [])
     return (
-        <div className="w-100 mb-5 bg-light" style={{ marginTop: `${windowWidth < 992 ? "3rem" : "6rem"}` }}>
+        <div className="w-100 mb-5" style={{ marginTop: `${windowWidth < 992 ? "3rem" : "6rem"}`, backgroundColor: "#F8F9FA" }}>
             <div className={`container d-flex justify-content-center align-items-center
             ${windowWidth < 992 ? "w-100" : "w-50"}
             `}>
-                <Form className="bg-white p-5 rounded"
-                    style={{ boxShadow: "0 5px 8px -3px rgb(0 0 0 / 10%)", borderRadius: "8px" }}>
+                <Form className=" p-5 rounded"
+                    style={{ border: "1px solid lightgray", borderRadius: "8px", backgroundColor: "#F8F9FA" }}>
                     <div className="text-center">
                         <MdPersonAdd
                             className="p-3"
@@ -63,42 +63,42 @@ export const Register = (props) => {
                             <Form.Label>نام</Form.Label>
                             <Form.Control
                                 className="bg-light"
-                                style={{ borderRadius: "22px", border: "none" }}
+                                style={{ borderRadius: "22px", border: "1px solid lightgray" }}
                                 onChange={handleChange} name="firstName" type="text" placeholder="نام خود را وارد نمایید" />
                         </div>
                         <div className="col-lg-6 col-12 mt-4">
                             <Form.Label>ایمیل</Form.Label>
                             <Form.Control
                                 className="bg-light"
-                                style={{ borderRadius: "22px", border: "none" }}
+                                style={{ borderRadius: "22px", border: "1px solid lightgray" }}
                                 onChange={handleChange} name="email" type="email" placeholder="آدرس ایمیل خود را وارد نمایید" />
                         </div>
                         <div className="col-lg-6 col-12 mt-4">
                             <Form.Label>نام خانوادگی</Form.Label>
                             <Form.Control
                                 className="bg-light"
-                                style={{ borderRadius: "22px", border: "none" }}
+                                style={{ borderRadius: "22px", border: "1px solid lightgray" }}
                                 onChange={handleChange} name="lastName" type="text" placeholder="نام خانوادگی خود را وارد نمایید" />
                         </div>
                         <div className="col-lg-6 col-12 mt-4">
                             <Form.Label>شماره موبایل</Form.Label>
                             <Form.Control
                                 className="bg-light"
-                                style={{ borderRadius: "22px", border: "none" }}
+                                style={{ borderRadius: "22px", border: "1px solid lightgray" }}
                                 onChange={handleChange} name="phoneNumber" type="email" placeholder="شماره موبایل خود را وارد نمایید" />
                         </div>
                         <div className="col-lg-6 col-12 mt-4">
                             <Form.Label>کلمه عبور</Form.Label>
                             <Form.Control
                                 className="bg-light"
-                                style={{ borderRadius: "22px", border: "none" }}
+                                style={{ borderRadius: "22px", border: "1px solid lightgray" }}
                                 onChange={handleChange} name="password" type="password" placeholder="کلمه عبور خود را وارد نمایید" />
                         </div>
                         <div className="col-lg-6 col-12 mt-4">
                             <Form.Label>تایید کلمه عبور</Form.Label>
                             <Form.Control
                                 className="bg-light"
-                                style={{ borderRadius: "22px", border: "none" }}
+                                style={{ borderRadius: "22px", border: "1px solid lightgray" }}
                                 onChange={handleChange} name="password" type="password" placeholder="کلمه عبور را مجددا وارد نمایید" />
                         </div>
                     </div>

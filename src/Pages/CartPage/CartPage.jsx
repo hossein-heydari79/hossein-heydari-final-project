@@ -41,9 +41,9 @@ const CartPage = (props) => {
     }, [history.location.pathname])
     // dispatch({type:"resetCart"})
     return (
-        <div className="w-100 bg-light" style={{ marginTop: `${windowWidth < 992 ? "3rem" : "5rem"}` }}>
-            <div className="d-flex justify-content-around container w-100 bg-white p-2"
-                style={{ boxShadow: "0 5px 8px -3px rgb(0 0 0 / 10%)", borderRadius: "8px", position: "relative", top: "10px" }}
+        <div className="w-100" style={{ marginTop: `${windowWidth < 992 ? "3rem" : "5rem"}`, backgroundColor: "#F8F9FA" }}>
+            <div className="d-flex justify-content-around container w-100 p-2"
+                style={{ border: "1px solid gray", borderRadius: "8px", position: "relative", top: "10px", backgroundColor: "#F8F9FA" }}
             >{console.log(localState)}
                 <div className="text-center" style={{ opacity: `${state[0] ? 100 : 30}%` }}>
                     <MdShoppingCart style={{ width: "50px", height: "50px", color: "black" }} />
@@ -66,7 +66,7 @@ const CartPage = (props) => {
                 </div>
             </div>
             <context.Provider value={{ localState, localDispatch }}>
-                <div className="container w-100 d-flex">
+                <div className="container w-100 d-flex" style={{ backgroundColor: "#F8F9FA" }}>
                     {
                         routes.map((item, index) => {
                             return (

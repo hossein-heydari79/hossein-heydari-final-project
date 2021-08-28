@@ -11,7 +11,7 @@ function App() {
   document.title = "دیجی کالا"
   return (
     <Router>
-      <div className="app bg-light">
+      <div className="app">
         <MyNavbar /><Spinner animation="border" variant="primary" />
         <Suspense fallback={<></>}>
           <Switch>

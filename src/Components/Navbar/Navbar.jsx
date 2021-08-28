@@ -78,7 +78,7 @@ const MyNavbar = () => {
     const [userAccount, setUserAccount] = useState(false)
     const userInfo = useSelector(state => state.User)
     return (
-        <Navbar fixed="top" bg="white" expand="lg" className="w-100 d-flex flex-column" style={{ borderBottom: "1px solid gray" }}>
+        <Navbar fixed="top" expand="lg" className="w-100 d-flex flex-column" style={{ borderBottom: "1px solid gray", backgroundColor: "#F8F9FA" }}>
             <div className="w-100 d-flex justify-content-between container">
                 <Navbar.Brand className="" onClick={() => history.push("/")} href="#">دیجی کالا</Navbar.Brand>
                 {windowWidth > 500 &&

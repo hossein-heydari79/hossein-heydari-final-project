@@ -60,10 +60,10 @@ export const Login = (props) => {
             })
     }
     return (
-        <div className="w-100 bg-light h-100" style={{ marginTop: "6rem" }}>
+        <div className="w-100 h-100" style={{ marginTop: "6rem", backgroundColor: "#F8F9FA" }}>
             <div className="container w-100 h-75 d-flex justify-content-center align-items-center">
-                <Form className="bg-white p-5 rounded"
-                    style={{ boxShadow: "0 5px 8px -3px rgb(0 0 0 / 10%)", borderRadius: "8px", width: "40%" }}
+                <Form className="p-5 rounded"
+                    style={{ border: "1px solid lightgray", borderRadius: "8px", width: "40%", backgroundColor: "#F8F9FA" }}
                 >
                     <div className="text-center">
                         <MdLockOpen
@@ -74,13 +74,13 @@ export const Login = (props) => {
                     <Form.Group className="mb-3" controlId="formBasicEmail">
                         <Form.Label>ایمیل</Form.Label>
                         <Form.Control
-                            style={{ borderRadius: "22px", border: "none", backgroundColor: "#e8f0fe" }}
+                            style={{ borderRadius: "22px", border: "1px solid lightgray" }}
                             onChange={handleChange} name="email" type="email" placeholder="آدرس ایمیل" />
                     </Form.Group>
                     <Form.Group className="mb-3" controlId="formBasicPassword">
                         <Form.Label>رمز عبور</Form.Label>
                         <Form.Control
-                            style={{ borderRadius: "22px", border: "none", backgroundColor: "#e8f0fe" }}
+                            style={{ borderRadius: "22px", border: "1px solid lightgray" }}
                             onChange={handleChange} name="password" type="password" placeholder="کلمه عبور" />
                     </Form.Group>
                     <Button

@@ -28,7 +28,7 @@ const ProductSlider = (props) => {
     }, [])
     const [windowWidth, setWindowWith] = useState(window.innerWidth)
     return (
-        <div className={`d-flex flex-column my-5`} style={{ background: "white" }}>
+        <div className={`d-flex flex-column my-5`}>
             <div className="container">
                 <div className="my-4">
                     <h2 className='text-dark'>{props.title}</h2>
@@ -43,7 +43,7 @@ const ProductSlider = (props) => {
                         "clickable": true
                     }}
                     navigation={windowWidth < 500 ? false : true}
-                    className="mySwiper mb-5 bg-white p-lg-5"
+                    className="mySwiper mb-5 p-lg-5"
                     style={{ borderRadius: "10px" }}
                 >
                     {

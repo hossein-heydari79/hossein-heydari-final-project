@@ -8,7 +8,6 @@
 }
 
 .product-card-container:hover {
-    background-color: white;
     transform: scale(1.05);
     transition: 0.15s;
 }

@@ -8,9 +8,9 @@ const VerifyPayment = (props) => {
         })
     }, [])
     return (
-        <div className="bg-light mt-4 p-3 w-100">
-            <div className={`text-center bg-white mx-auto p-5 ${windowWidth < 500 ? "w-100" : "w-50"}`}
-                style={{ boxShadow: "0 5px 8px -3px rgb(0 0 0 / 10%)", borderRadius: "8px" }}>
+        <div className="mt-4 p-3 w-100" style={{ backgroundColor: "#F8F9FA" }}>
+            <div className={`text-center mx-auto p-5 ${windowWidth < 500 ? "w-100" : "w-50"}`}
+                style={{ boxShadow: "0 5px 8px -3px rgb(0 0 0 / 10%)", borderRadius: "8px", backgroundColor: "#F8F9FA", border: "1px solid lightgray" }}>
                 <MdCheckCircle
                     className="p-3"
                     style={{ width: "100px", height: "100px", backgroundColor: "#f3fff9", color: "#3cc9a7", borderRadius: "50%" }}

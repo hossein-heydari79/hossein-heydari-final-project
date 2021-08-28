@@ -69,21 +69,21 @@ const ProductDetails = (props) => {
         });
     }
     return (
-        <div className="w-100" style={{ marginTop: "7rem", backgroundColor: "#fbfbfb" }}>
-            <div className="container w-100">
-                <div className="w-100 d-flex bg-white p-3 card-container">
+        <div className="w-100" style={{ marginTop: "7rem", backgroundColor: "#F8F9FA" }}>
+            <div className="container w-100" style={{ backgroundColor: "#F8F9FA" }}>
+                <div className="w-100 d-flex p-3 card-container" style={{ backgroundColor: "#F8F9FA" }}>
                     <div className="row w-100">
                         <div className="col-lg-5 col-12">
                             <PhotoViewr photo={product?.image} />
                         </div>
-                        <div className="col-lg-3 col-12">
+                        <div className="col-lg-3 col-12" style={{ backgroundColor: "#F8F9FA" }}>
                             <div className="text-center my-3">
                                 <h1>{product?.model}</h1>
                             </div>
                         </div>
                         <div className="col-lg-4 col-12">
-                            <div className="bg-light text-center rounded w-100 p-3"
-                                style={{ boxShadow: "rgb(0 0 0 / 10%) -1px 7px 12px 7px", borderRadius: "8px" }}
+                            <div className="text-center rounded w-100 p-3"
+                                style={{ border: "1px solid lightgray", borderRadius: "8px", backgroundColor: "#F8F9FA" }}
                             >
                                 <h5 className="py-4">فروشنده:دیجی کالا</h5>
                                 <hr />
@@ -106,37 +106,26 @@ const ProductDetails = (props) => {
                     </div>
                 </div>
                 <div className="w-100">
-                    <Nav variant="tabs" className="my-2 p-2 card-container" defaultActiveKey="/home">
-                        <Nav.Item>
-                            <Nav.Link href="#specs">مشخصات</Nav.Link>
-                        </Nav.Item>
-                        {/* <Nav.Item>
-                            <Nav.Link href="#comments">دیدگاه کاربران</Nav.Link>
-                        </Nav.Item> */}
-                        <Nav.Item>
-                            <Nav.Link href="#addComments">افزودن نظر</Nav.Link>
-                        </Nav.Item>
-                    </Nav>
                     <div className="w-100 my-5 p-2" id="specs">
                         <div className="container">
                             <h3>مشخصات</h3>
                             <Table>
                                 <tbody>
                                     <tr>
-                                        <td className="p-3" style={{ width: "30%", backgroundColor: "white" }}>پردازنده</td>
-                                        <td className="bg-white p-3">{product?.specifications?.cpu}</td>
+                                        <td className="p-3" style={{ width: "30%" }}>پردازنده</td>
+                                        <td className="p-3">{product?.specifications?.cpu}</td>
                                     </tr>
                                     <tr>
-                                        <td className="p-3" style={{ width: "30%", backgroundColor: "white" }}>حافظه داخلی</td>
-                                        <td className="bg-white p-3">{product?.specifications?.rom}</td>
+                                        <td className="p-3" style={{ width: "30%" }}>حافظه داخلی</td>
+                                        <td className="p-3">{product?.specifications?.rom}</td>
                                     </tr>
                                     <tr>
-                                        <td className="p-3" style={{ width: "30%", backgroundColor: "white" }}>رم</td>
-                                        <td className="bg-white p-3">{product?.specifications?.ram}</td>
+                                        <td className="p-3" style={{ width: "30%" }}>رم</td>
+                                        <td className="p-3">{product?.specifications?.ram}</td>
                                     </tr>
                                     <tr>
-                                        <td className="p-3" style={{ width: "30%", backgroundColor: "white" }}>صفحه نمایش</td>
-                                        <td className="bg-white p-3">{product?.specifications?.display}</td>
+                                        <td className="p-3" style={{ width: "30%" }}>صفحه نمایش</td>
+                                        <td className="p-3">{product?.specifications?.display}</td>
                                     </tr>
                                 </tbody>
                             </Table>

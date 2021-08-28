@@ -16,7 +16,7 @@ export const HomePage = (props) => {
         })
     }, [])
     return (
-        <div className="w-100" style={{ marginTop: `${windowWidth < 992 ? "3rem" : "5rem"}`, backgroundColor: "white" }}>
+        <div className="w-100" style={{ marginTop: `${windowWidth < 992 ? "3rem" : "5rem"}`, backgroundColor: "#F8F9FA" }}>
             <div className="d-flex flex-lg-row flex-column w-100 container">
                 <Carousel />
                 <div className={`d-flex flex-lg-column flex-row`} style={{ width: `${windowWidth < 992 ? 100 : 34}%` }}>

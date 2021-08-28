@@ -10,7 +10,7 @@ SwiperCore.use([Navigation, Thumbs]);
 const PhotoViewr = (props) => {
     const [thumbsSwiper, setThumbsSwiper] = useState(null);
     return (
-        <div className="w-100">
+        <div className="w-100" style={{ backgroundColor: "#F8F9FA" }}>
             <Swiper
                 style={{ width: "100%" }}
                 spaceBetween={10}
