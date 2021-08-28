@@ -7,7 +7,6 @@ const port = process.env.PORT || 5000;
 const bcrypt = require("bcrypt");
 const saltRounds = 10;
 const users = [];
-const orders = [];
 myPlaintextPassword = "1234";
 bcrypt.hash(myPlaintextPassword, saltRounds, function (err, hash) {
     // Store hash in your password DB.
@@ -80,30 +79,6 @@ app.post("/login", (req, res) => {
     }
     else {
         res.status(404).send("user not found")
-    }
-});
-app.post("/order", (req, res) => {
-    const body = req.body;
-    console.log(body);
-    orders.push(body);
-    res.status(200).send("successful");
-});
-app.post("/comment", (req, res) => {
-    const body = req.body;
-    console.log(body);
-    const { comment, id, category } = body
-    if (category === "mobile") {
-        const item = phones.phones.products.find((product) => product.id === id)
-        item && item.comments.push(comment)
-        res.status(200).send(item);
-    } else if (category === "tablet") {
-        const item = tablets.tablets.products.find((product) => product.id === id)
-        item && item.comments.push(comment)
-        res.status(200).send(item);
-    } else if (category === "laptop") {
-        const item = laptops.laptops.products.find((product) => product.id === id)
-        item && item.comments.push(comment)
-        res.status(200).send(item);
     }
 });
 //files share
