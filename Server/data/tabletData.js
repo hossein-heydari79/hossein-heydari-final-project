@@ -144,6 +144,54 @@ const tablets = {
                 connection: "4G"
             }
         },
+        {
+            id: "10",
+            category: "tablet",
+            brand: "apple",
+            model: "Ipad",
+            image: "/tablets/ipad.jpg",
+            price: 10_500_000,
+            comments: [],
+            specifications: {
+                cpu: "A8",
+                ram: "2",
+                rom: "32",
+                display: "10",
+                connection: "3G"
+            }
+        },
+        {
+            id: "11",
+            category: "tablet",
+            brand: "samsung",
+            model: "Tab S6 lite",
+            image: "/tablets/tabs6lite.webp",
+            price: 9_000_000,
+            comments: [],
+            specifications: {
+                cpu: "Qualcom 735G",
+                ram: "4",
+                rom: "64",
+                display: "10",
+                connection: "4G"
+            }
+        },
+        {
+            id: "12",
+            category: "tablet",
+            brand: "samsung",
+            model: "Tab S2",
+            image: "/tablets/tabs2.webp",
+            price: 4_000_000,
+            comments: [],
+            specifications: {
+                cpu: "Exynos",
+                ram: "2",
+                rom: "32",
+                display: "8",
+                connection: "3G"
+            }
+        },
     ]
 }
 exports.tablets = tablets

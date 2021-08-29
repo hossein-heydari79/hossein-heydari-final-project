@@ -166,6 +166,21 @@ const phones = {
                 connection: "5G"
             }
         },
+        {
+            id: "12",
+            category: "mobile",
+            brand: "samsung",
+            model: "Galaxy S8",
+            image: "/phones/galaxys8.jpg",
+            price: 3_800_000,
+            specifications: {
+                cpu: "A50",
+                ram: "2",
+                rom: "64",
+                display: "5.5",
+                connection: "4G"
+            }
+        },
     ],
 };
 exports.phones = phones;
